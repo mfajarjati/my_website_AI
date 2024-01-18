@@ -2,6 +2,7 @@ numpy==1.26.3
 openai==1.8.0
 opencv_contrib_python==4.9.0.80
 opencv_python==4.9.0.80
+opencv_python_headless==4.9.0.80
 streamlit==1.30.0
 streamlit_option_menu==0.3.6
 tensorflow==2.15.0.post1
