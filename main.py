@@ -79,7 +79,7 @@ elif pages_dict == "Image Classification":
         unsafe_allow_html=True,
     )
 
-    model = tf.keras.models.load_model(" saved_model/mdl_wts.hdf5")
+    model = tf.keras.models.load_model("saved_model/mdl_wts.hdf5")
     ### load file
     st.header("", divider="rainbow")
     import streamlit as st
