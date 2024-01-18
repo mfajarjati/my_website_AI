@@ -45,7 +45,7 @@ with st.sidebar:
         },
     )
     st.markdown("")
-    st.caption("Copyright (c) - Created by mfajarjati - 2024")
+    st.caption("  Copyright (c) - Created by mfajarjati - 2024")
 
 if pages_dict == "Home":
     st.write(

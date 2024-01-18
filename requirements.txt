@@ -6,3 +6,4 @@ opencv_python_headless==4.9.0.80
 streamlit==1.30.0
 streamlit_option_menu==0.3.6
 tensorflow==2.15.0.post1
+ 
