@@ -45,7 +45,7 @@ with st.sidebar:
         },
     )
     st.markdown("")
-    st.caption("  Copyright (c) - Created by mfajarjati - 2024")
+    st.caption("  Copyright (c) - Created by mfajarjati - 2025")
 
 if pages_dict == "Home":
     st.write(
@@ -162,7 +162,7 @@ elif pages_dict == "ChatBot AI":
     st.markdown(
         """
             ### About ChatBot AI
-            ChatBot AI menggunakan teknologi OpenAI GPT-3.5 Turbo untuk memberikan respon yang cerdas berdasarkan teks atau prompt yang Anda berikan. 
+            ChatBot AI menggunakan teknologi Deepseek untuk memberikan respon yang cerdas berdasarkan teks atau prompt yang Anda berikan. 
             Silakan masukkan pertanyaan atau percakapan Anda ke dalam kotak input, dan ChatBot AI akan memberikan respons sesuai dengan konteks.
         """
     )
@@ -179,7 +179,7 @@ elif pages_dict == "ChatBot AI":
         """
     )
 
-    client = OpenAI(api_key=st.secrets["secrets"]["OPENAI_API_KEY"])
+    client = OpenAI(api_key=st.secrets["secrets"]["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"])
 
     # Mengecek dan menginisialisasi state untuk model dan pesan
     if "openai_model" not in st.session_state:
