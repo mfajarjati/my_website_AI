@@ -181,9 +181,14 @@ elif pages_dict == "ChatBot AI":
 
     client = OpenAI(api_key=st.secrets["openrouter"]["api_key"])
 
+    client = OpenAI(
+    api_key=st.secrets["openrouter"]["api_key"],             
+  base_url="https://openrouter.ai/api/v1"   
+)
+
     # Mengecek dan menginisialisasi state untuk model dan pesan
     if "openai_model" not in st.session_state:
-        st.session_state["openai_model"] = "gpt-3.5-turbo"
+        st.session_state["openai_model"] = "deepseek/deepseek-chat"
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -195,7 +200,7 @@ elif pages_dict == "ChatBot AI":
 
     # Menerima input dari pengguna
     st.markdown("**Fitur input teks sementara dinonaktifkan karena keterbatasan API.**")
-    if prompt := st.chat_input("What is up?", disabled=True):
+    if prompt := st.chat_input("What is up?"):
         # Menyimpan pesan pengguna ke dalam sesi
         st.session_state.messages.append({"role": "user", "content": prompt})
 
