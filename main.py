@@ -197,7 +197,6 @@ elif pages_dict == "ChatBot AI":
             st.markdown(message["content"])
 
     # Menerima input dari pengguna
-    st.markdown("**Fitur input teks sementara dinonaktifkan karena keterbatasan API.**")
     if prompt := st.chat_input("What is up?"):
         # Menyimpan pesan pengguna ke dalam sesi
         st.session_state.messages.append({"role": "user", "content": prompt})
