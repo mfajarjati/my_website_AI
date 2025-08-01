@@ -179,7 +179,7 @@ elif pages_dict == "ChatBot AI":
         """
     )
 
-client = OpenAI(api_key=st.secrets["openrouter"]["api_key"])
+    client = OpenAI(api_key=st.secrets["openrouter"]["api_key"])
 
     # Mengecek dan menginisialisasi state untuk model dan pesan
     if "openai_model" not in st.session_state:
