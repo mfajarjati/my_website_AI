@@ -179,8 +179,6 @@ elif pages_dict == "ChatBot AI":
         """
     )
 
-    client = OpenAI(api_key=st.secrets["openrouter"]["api_key"])
-
     client = OpenAI(
     api_key=st.secrets["openrouter"]["api_key"],             
   base_url="https://openrouter.ai/api/v1"   
